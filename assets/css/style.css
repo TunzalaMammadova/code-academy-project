@@ -1,0 +1,129 @@
+.my-container {
+    width: 93%;
+    margin: 0 auto;
+}
+
+.my-container2 {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.header-up {
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+
+.address {
+    height: 20px;
+    margin-left: -6px;
+}
+
+.address p {
+    text-align: left;
+    color: #777777;
+    font-family: visby cf, Sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5em;
+}
+
+.sosial {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.search {
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.request {
+    display: flex;
+    justify-content: end;
+    margin-left: 94px;
+    width: 180px;
+    height: 55px;
+}
+
+.request a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: #f9dd00;
+    border: none;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-left: 35px;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: visby cf, Sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 0;
+    position: relative;
+}
+
+.menu-area {
+    position: absolute;
+    display: flex;
+
+}
+
+
+.logo {
+    margin-top: 10px;
+    margin-left: 50px;
+
+}
+
+.img img {
+    width: 100%;
+}
+
+
+.menu ul li a:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f9dd00;
+    transform: scaleX(0);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+
+.menu ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f9dd00;
+    transform: scaleX(0);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+
+
+ul li a:hover:before,
+ul li a:hover:after {
+    transform: scaleX(1);
+}
