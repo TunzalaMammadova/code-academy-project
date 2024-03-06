@@ -1,5 +1,5 @@
 .my-container {
-    width: 93%;
+    width: 94%;
     margin: 0 auto;
 }
 
@@ -8,15 +8,20 @@
     margin: 0 auto;
 }
 
+.container {
+    width: 70% !important;
+    margin: 0 auto !important;
+}
+
 .header-up {
     display: flex;
     align-items: center;
-    height: 70px;
+    min-height: 50px;
 }
 
 .address {
     height: 20px;
-    margin-left: -6px;
+    margin-left: 3px;
 }
 
 .address p {
@@ -49,30 +54,30 @@
 .request a {
     border: none;
     background-color: #f9dd00;
-  
 }
 
 .request a span {
-    text-decoration: inherit;
-    font-size: 18px;
-    display: inline-block;
     padding: 20px 40px;
+    text-decoration: inherit;
+    font-size: 19px;
+    display: inline-block;
     line-height: 1;
-    font-family: visby cf,Sans-serif!important;
-    font-weight: 800;
+    font-family: visby cf, Sans-serif !important;
+    font-weight: bold;
+    text-align: center;
 }
 
 .menu ul {
     display: flex;
     list-style: none;
-    margin-left: 35px;
+    margin-left: 30px;
     gap: 30px;
     margin-top: 20px;
 }
 
 .menu ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: visby cf, Sans-serif;
     font-size: 14px;
     font-weight: 800;
@@ -82,20 +87,20 @@
 }
 
 .menu-area {
-    position: absolute;
     display: flex;
-
+    position: absolute;
+    z-index: 9999;
 }
-
 
 .logo {
     margin-top: 10px;
     margin-left: 50px;
-
+    background-color: red;
 }
 
 .img img {
     width: 100%;
+    position: relative;
 }
 
 
@@ -130,3 +135,211 @@ ul li a:hover:after {
     transform: scaleX(1);
 }
 
+
+#fileds-area {
+    margin-top: 100px;
+}
+
+#fileds-area .fields h2:nth-child(1) {
+    font-family: visby cf, Sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: lowercase;
+    line-height: 1px;
+    letter-spacing: -1.2px;
+}
+
+#fileds-area .fields h2:nth-child(2) {
+    font-family: visby cf, Sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: .1em;
+    padding-top: 50px;
+}
+
+#fileds-area .fields img {
+    margin-top: 50px;
+}
+
+
+#fileds-area .fields span {
+    font-family: visby cf, Sans-serif !important;
+    font-size: 17px;
+    font-weight: 300;
+    color: #818a91;
+}
+
+.program-design {
+    display: flex;
+    cursor: pointer;
+}
+
+.program-design h2 {
+    font-size: 21px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 0;
+    padding-top: 80px;
+    font-family: visby cf, Sans-serif !important;
+}
+
+.program-design .marketing {
+    width: 300px;
+    height: 200px;
+    border: 1px solid grey;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.program-design .design {
+    width: 300px;
+    height: 200px;
+    border: 1px solid grey;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.security-programming {
+    display: flex;
+    cursor: pointer;
+}
+
+.security-programming h2 {
+    font-size: 21px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 0;
+    padding-top: 80px;
+    font-family: visby cf, Sans-serif !important;
+}
+
+.security-programming .security {
+    width: 300px;
+    height: 200px;
+    border: 1px solid grey;
+    border-right: 1px solid white;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.security-programming .programming {
+    width: 300px;
+    height: 200px;
+    border: 1px solid grey;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.program-design .design:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #ffc107;
+    border: none;
+}
+
+.program-design .marketing:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #872891;
+    border: none;
+}
+
+.security-programming .security:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #00B45A;
+    border: none;
+}
+
+.security-programming .programming:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #2382C8;
+    border: none;
+}
+
+#code-about {
+    margin-top: 100px;
+}
+
+#code-about .info h2:nth-child(1) {
+    font-family: visby cf, Sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+
+#code-about .info h2:nth-child(2) {
+    font-family: visby cf, Sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+#code-about .info img {
+    margin-top: 50px;
+}
+
+#code-about .info span {
+    font-family: visby cf, Sans-serif !important;
+    font-size: 17px;
+    font-weight: 300;
+    color: #818a91;
+}
+
+#info-area {
+    margin-top: 100px;
+}
+
+#info-area .card-code {
+    display: flex;
+    width: 550px;
+    height: 300px;
+    justify-content: space-between;
+}
+
+#info-area .card-code .img {
+    width: 206px;
+    height: 206px;
+}
+
+#info-area .card-code .img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#info-area .card-info {
+    width: 300px;
+    height: 206px;
+}
+
+#info-area .card-info p {
+    color: #656565;
+    font-family: visby cf, Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#info-area .card-info a:nth-child(1){
+    text-decoration: none;
+    font-family: visby cf,Sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    color: black;
+    cursor: pointer;
+}
+
+#info-area .card-info a {
+    text-decoration: none;
+    font-family: visby cf,Sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    font-style: normal;
+    color: black;
+    cursor: pointer;
+}
