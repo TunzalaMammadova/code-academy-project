@@ -11,7 +11,7 @@
 .header-up {
     display: flex;
     align-items: center;
-    height: 55px;
+    height: 70px;
 }
 
 .address {
@@ -44,20 +44,22 @@
 .request {
     display: flex;
     justify-content: end;
-    margin-left: 94px;
-    width: 180px;
-    height: 55px;
 }
 
 .request a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 18px;
-    font-weight: 800;
-    background-color: #f9dd00;
     border: none;
+    background-color: #f9dd00;
+  
+}
+
+.request a span {
+    text-decoration: inherit;
+    font-size: 18px;
+    display: inline-block;
+    padding: 20px 40px;
+    line-height: 1;
+    font-family: visby cf,Sans-serif!important;
+    font-weight: 800;
 }
 
 .menu ul {
@@ -127,3 +129,4 @@ ul li a:hover:before,
 ul li a:hover:after {
     transform: scaleX(1);
 }
+
