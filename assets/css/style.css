@@ -466,8 +466,8 @@ ul li a:hover:after {
     padding-top: 70px;
 }
 
-#contact-me .call-me{
-  padding-top: 70px;
+#contact-me .call-me {
+    padding-top: 70px;
 }
 
 #contact-me .meet h2:nth-child(1) {
@@ -655,30 +655,31 @@ ul li a:hover:after {
     font-weight: 900;
     line-height: 70px;
     margin-left: 80px;
-
 }
 
-.img-swipper {
+#student-comment .img-swipper {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 60px
 }
 
-.comment-img img {
+#student-comment .comment-img img {
     width: 110px;
     height: 110px;
     border-radius: 50%;
+    object-fit: conver;
+    margin-bottom: 50px;
 }
 
-.swiper-text {
+#student-comment .swiper-text {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.swiper-text p {
+#student-comment .swiper-text p {
     margin-top: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.3em;
@@ -686,13 +687,13 @@ ul li a:hover:after {
     line-height: 1.5;
 }
 
-.img-swipper .text span:nth-child(1) {
+#student-comment .img-swipper .text span:nth-child(1) {
     font-size: 20px;
     font-weight: 800;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.img-swipper .text span:nth-child(2) {
+#student-comment .img-swipper .text span:nth-child(2) {
     font-size: 20px;
     font-weight: 300;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -774,4 +775,111 @@ button {
 
 button:hover {
     background-color: #e99a00;
+}
+
+#graduates-area .card-title h2:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#graduates-area .card-title h2:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 70px;
+}
+
+#graduates-area {
+    margin-top: 100px;
+}
+
+#graduates-area .graduates {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+#graduates-area .graduates .card {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#graduates-area .graduates .card .card-img {
+    width: 150px;
+    height: 150px;
+    background-color: #bbb;
+    color: black;
+}
+
+#graduates-area .graduates .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#graduates-area .graduates .card .card-text {
+    padding: 10px;
+    color: white;
+    background-color:#e99a00;
+    transform: rotateX(180deg);
+}
+
+#graduates-area .graduates .card .card-text p {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#graduates-area .graduates .card .card-text span {
+    font-size: 15px;
+}
+
+#graduates-area .title-line {
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#graduates-area .title-line p {
+    background-color: #FFCD05;
+    width: 12%;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#graduates-area .card-area {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+}
+
+#graduates-area .card-area:hover .card {
+    transform: rotateX(180deg);
+}
+
+.card-img,
+.card-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
